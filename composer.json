@@ -75,7 +75,7 @@
         },
         {
             "type": "path",
-            "url": "../RemoteAuth",
+            "url": "../remote-auth",
             "options": {
                 "symlink": true
             }

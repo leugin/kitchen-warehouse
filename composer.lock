@@ -3195,7 +3195,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "../RemoteAuth",
+                "url": "../remote-auth",
                 "reference": "89d322eb8bc409755112bdd9fd286d30081c2999"
             },
             "require": {
