@@ -76,7 +76,7 @@ return [
             'model'=> User::class,
             'urls'=>[
                 'login'=>env('AUTH_PROVIDER_HTTP_URL_LOGIN', '/oauth/api/login'),
-                'me'=>env('AUTH_PROVIDER_HTTP_URL_LOGIN', '/oauth/api/me')
+                'me'=>env('AUTH_PROVIDER_HTTP_URL_ME', '/oauth/api/me')
             ]
         ]
 

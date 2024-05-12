@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y \
     libmagickwand-dev \
     libxslt-dev \
     unzip \
-    p7zip-full
+    p7zip-full \
+    iputils-ping \
 
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
