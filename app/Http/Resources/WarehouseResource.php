@@ -4,7 +4,11 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Leugin\KitchenCore\Models\Warehouse\Warehouse;
 
+/**
+ * @mixin Warehouse
+ */
 class WarehouseResource extends JsonResource
 {
     /**
@@ -14,6 +18,11 @@ class WarehouseResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return  [
+            'ingredient_id' => $this->ingredient_id,
+            'label' => $this->label,
+            'stock' => $this->stock,
+            'updated'=>$this->updated_at
+        ];
     }
 }
