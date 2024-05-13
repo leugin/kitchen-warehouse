@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Foundation\FarmerMarket\Contract\FarmerMarketService;
+use App\Foundation\FarmerMarket\Infrastructure\FakerFarmerMarket;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(FarmerMarketService::class, FakerFarmerMarket::class);
     }
 
     /**

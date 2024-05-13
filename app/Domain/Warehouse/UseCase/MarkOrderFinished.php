@@ -3,8 +3,8 @@
 namespace App\Domain\Warehouse\UseCase;
 
 use App\Events\OrderFinished;
-use Leugin\AlegraLaravel\App\Domain\Data\OrderStatus;
-use Leugin\AlegraLaravel\Framework\Model\Order;
+use Leugin\KitchenCore\Data\Values\OrderStatus;
+use Leugin\KitchenCore\Models\Order\Order;
 
 class MarkOrderFinished
 {

@@ -13,6 +13,7 @@
         "leugin/kitchen-core": "^0.0.1",
         "leugin/remote-auth": "dev-main",
         "predis/predis": "^2.0",
+        "pusher/pusher-php-server": "^7.2",
         "vladimir-yuldashev/laravel-queue-rabbitmq": "^14.0"
     },
     "require-dev": {

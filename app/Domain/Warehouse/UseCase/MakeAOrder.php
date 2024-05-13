@@ -3,8 +3,9 @@
 namespace App\Domain\Warehouse\UseCase;
 
 use App\Exceptions\NotEnoughIngredientException;
-use Leugin\AlegraLaravel\Framework\Model\Order;
-use Leugin\AlegraLaravel\Framework\Model\Warehouse;
+use Leugin\KitchenCore\Models\Order\Order;
+use Leugin\KitchenCore\Models\Warehouse\Warehouse;
+
 
 class MakeAOrder
 {
