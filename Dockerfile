@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     libxslt-dev \
     unzip \
     p7zip-full \
-    iputils-ping \
+    iputils-ping
 
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
